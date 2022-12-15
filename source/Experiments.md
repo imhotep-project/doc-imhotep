@@ -1,15 +1,15 @@
 # Experiments
 
 ---
-## How to get access to the IMHOTEP data?
+## 1. How to get access to the IMHOTEP data?
 * The project is on-going and the IMHOTEP simulations are prepared and produced on Jean-Zay@IDRIS (french national HPC). The outputs are stored on Jean-Zay and reprensent ~200 To for WP1 (the global sensitivity runs).
 * To get access to the data, contact first Thierry Penduff (IGE), William Llovel (LOPS), Jean-Marc Molines (IGE), Stephanie Leroux (Datlas).
 
 ---
-## WorkPackage 1 experiments:
+## 2. WorkPackage 1 experiments:
 
 ### Summary:
-![nomenclature tab](https://github.com/imhotep-project/imhotep-project-on-github/tree/main/DOCS/FIGS/imhotep-nomenclature.png)
+![nomenclature tab](./img/imhotep-nomenclature.png)
 _If you need to copy or modify this table, the [.doc source is available here](https://docs.google.com/document/d/1bAdjA8vK-TqqfxYqMXz69SUwyC0q7RlbeJqpd-5bzxo/edit?usp=sharing)_.
 
 ### Catalog of model output during WP1:
@@ -22,7 +22,7 @@ Experiment IMHOTEP.02 is the spinup of the WP1 experiments. It ran from 1968 to 
 * The technical doc and details on each simulations can be found [here](https://github.com/molines/IMHOTEP/tree/master/eORCA025),
 
 ---
-## WorkPackage 2 experiments:
+## 3. WorkPackage 2 experiments:
 
 ### Summary
 3 ensembles of 10 members each have been produced over 1980-2018. Their names follow the same conventions as in WP1, but start with the "E" of Ensemble:
@@ -31,7 +31,7 @@ Experiment IMHOTEP.02 is the spinup of the WP1 experiments. It ran from 1968 to 
 - EAI. 
 
 ### Spinup and initialization of the ensembles
-![WP2 spinup and init](https://github.com/imhotep-project/imhotep-project-on-github/tree/main/DOCS/FIGS/WP2_spinup_i,nit.png)
+![WP2 spinup and init](./img/WP2_spinup_init.png)
 
 ---
 ## Technical details about the making of the NEMO configuration and experiments
