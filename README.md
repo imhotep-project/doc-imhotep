@@ -1,6 +1,6 @@
 # doc-imhotep
 Some documentation for the IMHOTEP project
-![imhotep](https://github.com/imhotep-project/doc-imhotep/source/img/sss-esa.png)
+![imhotep](https://github.com/imhotep-project/doc-imhotep/blob/main/source/img/sss-esa.png)
 
 * Access the documentation here: [https://doc-imhotep.readthedocs.io/en/latest/index.html](https://doc-imhotep.readthedocs.io/en/latest/index.html).
 
