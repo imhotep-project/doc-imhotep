@@ -5,7 +5,7 @@
 Documentation for the IMHOTEP project
 ==============================================
 
-.. image:: img/amazon_delta_wikipedia.png
+.. image:: img/sss-esa.png
    :width: 600
 
 .. toctree::
