@@ -5,6 +5,9 @@
 Documentation for the IMHOTEP project
 ==============================================
 
+.. image:: https://github.com/imhotep-project/imhotep-project-on-github/blob/main/DOCS/FIGS/amazon_delta_wikipedia.png
+   :width: 600
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:

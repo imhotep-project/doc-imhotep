@@ -1,5 +1,3 @@
-![amazone](https://github.com/imhotep-project/imhotep-project-on-github/blob/main/DOCS/FIGS/amazon_delta_wikipedia.png)
-
 # Context of the project
 
 Le projet OSTST-IMHOTEP (IMpacts of freshwater discHarge interannual variability on Ocean heaT-salt contents and rEgional sea level change over the altimetry period, 2021- 2024) associe des océanographes, hydrologues, glaciologues, et mathématiciens de l’IGE, du LOPS, de l’IMT-Atlantique, du LEGOS, du LOCEAN et de Datlas.  L’objectif est d’étudier à partir de simulations et d’observations spatiales/in situ la réponse océanique (composantes du niveau de la mer, circulation multi-échelle, échanges inter-bassins, propriétés des masses d’eaux, banquise, icebergs, etc) aux fluctuations interannuelles individuelles et combinées des principaux apports d’eau douce continentale de l’Atlantique Nord et de l’Indien (grands fleuves tropicaux, calotte groenlandaise). 
