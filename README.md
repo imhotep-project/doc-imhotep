@@ -1,6 +1,6 @@
 # doc-imhotep
 Some documentation for the IMHOTEP project
-![imhotep](DOCS/FIGS/amazon_delta_wikipedia.png)
+![imhotep](https://github.com/imhotep-project/imhotep-project-on-github/blob/main/DOCS/FIGS/amazon_delta_wikipedia.png)
 
 * Access the documentation here: [https://doc-imhotep.readthedocs.io/en/latest/index.html](https://doc-imhotep.readthedocs.io/en/latest/index.html).
 
