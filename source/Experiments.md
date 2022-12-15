@@ -1,7 +1,6 @@
-# Experiments
+# Experiments:
 
----
-## 1. WorkPackage 1 experiments (single runs):
+## 1. Sensitivity experiments (single runs, WP1):
 
 ### 1.a Summary:
 ![nomenclature tab](./img/imhotep-nomenclature.png)
@@ -17,13 +16,10 @@ Experiment IMHOTEP.02 is the spinup of the WP1 experiments. It ran from 1968 to 
 * The technical doc and details on each simulations can be found [here](https://github.com/molines/IMHOTEP/tree/master/eORCA025),
 
 ---
-## 2. WorkPackage 2 experiments (Ensemble experiments):
+## 2. EEnsemble experiments (WP2)):
 
-### 2.a Summary
-3 ensembles of 10 members each have been produced over 1980-2018. Their names follow the same conventions as in WP1, but start with the "E" of Ensemble:
-- EGAI,
-- ES,
-- EAI. 
+### 2.a Summary:
+Three ensembles of 10 members each have been produced over 1980-2018. Their names follow the same conventions as in WP1, but start with "E" for Ensemble: EGAI, ES, EAI. 
 
 ### 2.b Spinup and initialization of the ensembles
 ![WP2 spinup and init](./img/WP2_spinup_init.png)
