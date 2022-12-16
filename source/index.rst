@@ -12,7 +12,7 @@ Documentation for the IMHOTEP project
    :maxdepth: 2
    :caption: Contents:
 
-   Context
-   Experiments
-   Model-outputs
-   Tools   
+   1-Context
+   2-Experiments
+   3-Model-outputs
+   4-Tools   
