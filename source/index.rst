@@ -14,5 +14,5 @@ Documentation for the IMHOTEP project
 
    Context
    Experiments
-   Access-the-data
+   Model-outputs
    Tools   
