@@ -9,8 +9,8 @@ _If you need to copy or modify this table, the [.doc source is available here](h
 ### Spinup 
 Experiment IMHOTEP.02 is the spinup of the WP1 experiments. It ran from 1968 to 2018, starting from climatological initial state.  All other WP1 experiments are initialized from a restart file from IMHOTEP.02 on 1980-01-01.
 
-### Technical details about the making of the NEMO configuration and experiments
-* The technical doc and details on each simulations can be found [here](https://github.com/molines/IMHOTEP/tree/master/eORCA025),
+### Technical details 
+The technical doc and details about the NEMO configuration for each simulation can be found [here](https://github.com/molines/IMHOTEP/tree/master/eORCA025).
 
 ---
 ## 2.2 Ensemble experiments (WP2))
@@ -22,5 +22,5 @@ Three ensembles of 10 members each have been produced over 1980-2018. Their name
 ![WP2 spinup and init](./img/WP2_spinup_init.png)
 
 ---
-### Technical details about the making of the NEMO configuration and experiments
-Jean-Marc's github here: [https://github.com/molines/IMHOTEP](https://github.com/molines/IMHOTEP).
+### Technical details 
+The technical doc and details about the NEMO configuration for each simulation can be found [here](https://github.com/molines/IMHOTEP/tree/master/eORCA025).

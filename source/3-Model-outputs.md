@@ -10,29 +10,29 @@
 The primary outpus are the model outputs produced and archived at run time.
 
 ### Location of primary outputs:
-#### On Jean-Marc's `$STORE` space:
+* _On Jean-Marc's `$STORE` space:_
 ```
 cd  /gpfsstore/rech/cli/rcli002/eORCA025.L75
 ```
-* For WP1 experiments: you'll find the directories `eORCA025.L75-IMHOTEP.<exp>-S/<freq>/<year>`where `exp`: S, GAI, AI ..., `freq`: 1d 5d 1m 1y, `year`is the year.
+For WP1 experiments: you'll find the directories `eORCA025.L75-IMHOTEP.<exp>-S/<freq>/<year>`where `exp`: S, GAI, AI ..., `freq`: 1d 5d 1m 1y, `year`is the year.
 
-* For WP2 ensemble experiments:
+For WP2 ensemble experiments:
  You'll find the directories: `eORCA025.L75-IMHOTEP.<exp>.<mbr>-S/<freq>/<year>`where 
 `exp`: ES, EGAI, EAI ..., `mbr` : 001 à 010, `freq`: 1d 5d 1m 1y.
 
-#### Some more on the ``$STORE/common` space:
-* Note that experiment SC (WP1) is located there:
+* _Some more on the ``$STORE/common` space:_
+
+Note that experiment SC (WP1) is located there:
 ```
 /gpfsstore/rech/cli/commun/IMHOTEP/eORCA025.L75-IMHOTEP.SC-S
 ```
-
-* Also, you'll find some untar files of the experiment 02 (WP1 spinup) here:
+Also, you'll find some untar files of the experiment 02 (WP1 spinup) here:
 ```
 /gpfsstore/rech/cli/commun/IMHOTEP/eORCA025.L75-IMHOTEP.02-S
 ```
 
 ### Which variables are available?
-* For WP1 experiments:
+* _For WP1 experiments:_
 ```
 1h :  Basic surface fields.
 
@@ -174,7 +174,7 @@ In addition, 1m output also have the average of second order moments computed at
 1y :  Same as 1m when annual segment of production were possible. This turned to be impossible for recent years, because of the OBS module that ran out of memory due to the large
 amount of data .  In this latter case, annual means were computed from daily monthly means. 
 ```
-* For WP2 experiments:
+* _For WP2 experiments:_
 Similar to WP1 except than the 3-d fields are saved at 5d frequency instead of 1d.
 
 ## 3.3 Secondary outputs shared on Jean Zay
