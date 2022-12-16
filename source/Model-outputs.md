@@ -1,13 +1,13 @@
-# Model outputs
+# 3. Model outputs
 
 ---
-## 1. How to get access ?
+## 3.1 How to get access ?
 * The project is on-going and the IMHOTEP simulations are prepared and produced on Jean-Zay@IDRIS (french national HPC). The outputs are stored on Jean-Zay and reprensent ~200 To for WP1 (the global sensitivity runs).
 * To get access to the data, contact first Thierry Penduff (IGE), William Llovel (LOPS), Jean-Marc Molines (IGE), Stephanie Leroux (Datlas).
 
 ---
-## 2. Where to find the primary outputs on Jean Zay?
-Primary outpus are the model outputs produced and archived at run time.
+## 3.2 Where to find the primary outputs on Jean Zay?
+The primary outpus are the model outputs produced and archived at run time.
 
 ### Location:
 On the $STORE space of Jean Zay:
@@ -21,12 +21,12 @@ cd  /gpfsstore/rech/cli/rcli002/eORCA025.L75
 `exp`: ES, EGAI, EAI ..., `mbr` : 001 à 010, `freq`: 1d 5d 1m 1y.
 
 * However, note that experiment SC (WP1) is located in this other directory:
-````
+```
 /gpfsstore/rech/cli/commun/IMHOTEP/eORCA025.L75-IMHOTEP.SC-S
 ```
 
 * Also, you'll find some untar files of the experiment 02 (WP1 spinup) here:
-````
+```
 /gpfsstore/rech/cli/commun/IMHOTEP/eORCA025.L75-IMHOTEP.02-S
 ```
 
@@ -174,11 +174,11 @@ amount of data .  In this latter case, annual means were computed from daily mon
 
 ```
 
-## 3. Sharing some secondary outputs on Jean Zay
-Secondary outputs are computed from the primary outputs after run time. Because some computations can take time and produce large amount of data, it is good practice to make those secondary datasets available to other members of the IMHOTEP projects, as long as they are documented.
+## 3.3 Secondary outputs shared on Jean Zay
+The secondary outputs are computed from the primary outputs _after_ run time. Because some computations can take time and produce large amount of data, it is good practice to make those secondary datasets available to other members of the IMHOTEP projects, as long as they are documented.
 
 Below is the list of secondary outputs available on the `/common/` directory of the project on the `$STOREDIR`. __Any other contribution welcome !!__
-````
+```
 cd /gpfsstore/rech/cli/commun/IMHOTEP
 tree -L 1
 .
@@ -205,7 +205,7 @@ tree -L 1
 ```
 
 * `ENSTATS_1y`is the directory where ensemble stats at 1y frequency were computed (only sss at the moment)
-````
+```
 cd /gpfsstore/rech/cli/commun/IMHOTEP/ENSTATS_1y
 tree -L 1
 .
