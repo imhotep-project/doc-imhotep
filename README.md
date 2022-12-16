@@ -1,5 +1,4 @@
-# doc-imhotep
-Some documentation for the IMHOTEP project:
+# Some documentation about the IMHOTEP project:
 
 * __TO READ__ the documentation click here: [https://doc-imhotep.readthedocs.io/en/latest/index.html](https://doc-imhotep.readthedocs.io/en/latest/index.html).
 
