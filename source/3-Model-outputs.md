@@ -9,8 +9,8 @@
 ## 3.2 Where to find the primary outputs on Jean Zay?
 The primary outpus are the model outputs produced and archived at run time.
 
-### Location:
-On the $STORE space of Jean Zay:
+### Location of primary outputs:
+#### On Jean-Marc's `$STORE` space:
 ```
 cd  /gpfsstore/rech/cli/rcli002/eORCA025.L75
 ```
@@ -20,7 +20,8 @@ cd  /gpfsstore/rech/cli/rcli002/eORCA025.L75
  You'll find the directories: `eORCA025.L75-IMHOTEP.<exp>.<mbr>-S/<freq>/<year>`where 
 `exp`: ES, EGAI, EAI ..., `mbr` : 001 à 010, `freq`: 1d 5d 1m 1y.
 
-* However, note that experiment SC (WP1) is located in this other directory:
+#### Some more on the ``$STORE/common` space:
+* Note that experiment SC (WP1) is located there:
 ```
 /gpfsstore/rech/cli/commun/IMHOTEP/eORCA025.L75-IMHOTEP.SC-S
 ```
@@ -31,6 +32,7 @@ cd  /gpfsstore/rech/cli/rcli002/eORCA025.L75
 ```
 
 ### Which variables are available?
+* For WP1 experiments:
 ```
 1h :  Basic surface fields.
 
@@ -171,8 +173,9 @@ In addition, 1m output also have the average of second order moments computed at
 
 1y :  Same as 1m when annual segment of production were possible. This turned to be impossible for recent years, because of the OBS module that ran out of memory due to the large
 amount of data .  In this latter case, annual means were computed from daily monthly means. 
-
 ```
+* For WP2 experiments:
+Similar to WP1 except than the 3-d fields are saved at 5d frequency instead of 1d.
 
 ## 3.3 Secondary outputs shared on Jean Zay
 The secondary outputs are computed from the primary outputs _after_ run time. Because some computations can take time and produce large amount of data, it is good practice to make those secondary datasets available to other members of the IMHOTEP projects, as long as they are documented.
