@@ -23,4 +23,4 @@ Three ensembles of 10 members each have been produced over 1980-2018. Their name
 
 ---
 ### Technical details 
-The technical doc and details about the NEMO configuration for each simulation can be found [here](https://github.com/molines/IMHOTEP/tree/master/eORCA025).
+The technical doc and details about the NEMO configuration for each simulation can be found [here](https://github.com/molines/IMHOTEP/tree/master/eORCA025/ENSEMBLE_SIMULATIONS).

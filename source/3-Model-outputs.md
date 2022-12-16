@@ -20,7 +20,7 @@ For WP2 ensemble experiments:
  You'll find the directories: `eORCA025.L75-IMHOTEP.<exp>.<mbr>-S/<freq>/<year>`where 
 `exp`: ES, EGAI, EAI ..., `mbr` : 001 à 010, `freq`: 1d 5d 1m 1y.
 
-* _Some more on the ``$STORE/common` space:_
+* _Some more on the `$STORE/common` space:_
 
 Note that experiment SC (WP1) is located there:
 ```
@@ -178,7 +178,7 @@ amount of data .  In this latter case, annual means were computed from daily mon
 Similar to WP1 except than the 3-d fields are saved at 5d frequency instead of 1d.
 
 ## 3.3 Secondary outputs shared on Jean Zay
-The secondary outputs are computed from the primary outputs _after_ run time. Because some computations can take time and produce large amount of data, it is good practice to make those secondary datasets available to other members of the IMHOTEP projects, as long as they are documented.
+The secondary outputs are computed from the primary outputs _after_ run time (example: MOC, ensemble statistics, heat budget,  etc). Because some computations can take time and produce large amount of data, it is good practice to make those secondary datasets available to other members of the IMHOTEP projects, along with some scripts and/or documentation.
 
 Below is the list of secondary outputs available on the `/common/` directory of the project on the `$STOREDIR`. __Any other contribution welcome !!__
 ```
@@ -196,7 +196,7 @@ tree -L 1
 `-- SMOS-L3
 ```
 
-* `MOCZ` is the Meridional Overturning Circulation (z coordinate) computed from the cdftool `cdfmoc` (see script `compute_mocz_1m_ens.sh`below):
+* In `./MOCZ/` is stored the Meridional Overturning Circulation (z coordinate) computed from the cdftool `cdfmoc` (see script `compute_mocz_1m_ens.sh`below):
 ```
 cd /gpfsstore/rech/cli/commun/IMHOTEP/MOCZ
 tree -L 1
@@ -207,7 +207,7 @@ tree -L 1
 |-- compute_mocz_1m_ens.sh
 ```
 
-* `ENSTATS_1y`is the directory where ensemble stats at 1y frequency were computed (only sss at the moment)
+* In  `./ENSTATS_1y/`is saved the ensemble stats at 1y frequency (only for surfgridT at the moment)
 ```
 cd /gpfsstore/rech/cli/commun/IMHOTEP/ENSTATS_1y
 tree -L 1
@@ -218,9 +218,9 @@ tree -L 1
 `-- ES
 ```
 
-* Same for `ENSTATS_1m` and `ENSTATS_1d` at 1m and 1 d frequency. Note that for 1D, only a few years were computed so far.
+* Same in `./ENSTATS_1m/` and `./ENSTATS_1d/` at 1m and 1 d frequency. Note that for 1D, only a few years were computed so far.
 
-* ESA-CCI obs product for Sea Surface Salinity: `/gpfsstore/rech/cli/commun/IMHOTEP/ESA-SSS`
+* In `./ESA-SSS/` is saved the ESA-CCI __OBS__ product of Sea Surface Salinity for comparaison to the model SSS.
 
-* to be continued !
+* (...) to be continued !
 
