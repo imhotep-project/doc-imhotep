@@ -1,8 +1,8 @@
-# doc-imhotep
-Some documentation for the IMHOTEP project
-![imhotep](https://github.com/imhotep-project/imhotep-project-on-github/blob/main/DOCS/FIGS/amazon_delta_wikipedia.png)
+# Some documentation about the IMHOTEP project:
 
-* Access the documentation here: [https://doc-imhotep.readthedocs.io/en/latest/index.html](https://doc-imhotep.readthedocs.io/en/latest/index.html).
+* __TO READ__ the documentation click here: [https://doc-imhotep.readthedocs.io/en/latest/index.html](https://doc-imhotep.readthedocs.io/en/latest/index.html).
 
-* To contribute to the documentation please edit files in markdown in this repository ([doc-imhotep](https://github.com/imhotep-project/doc-imhotep/tree/main/source)) (the rendered doc will rebuild automatically from any edit to the files).
+* __TO CONTRIBUTE__  and edit the documentation, please edit the files in markdown (.md) in the [`./source` repository](https://github.com/imhotep-project/doc-imhotep/tree/main/source) above. The rendered on-line documentation will rebuild and update automatically from any edit & push).
+
+![imhotep](https://github.com/imhotep-project/doc-imhotep/blob/main/source/img/sss-esa.png)
 
