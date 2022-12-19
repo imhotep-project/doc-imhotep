@@ -11,4 +11,5 @@
 * New! (2022-12-15): a jupyterhub accessible from browser : http://www.idris.fr/jean-zay/pre-post/jean-zay-jupyterhub.html
 ---
 ## 4.3 Scripts and example codes for analyses
-* More to come soon (december 2022)
+* From Stephanie (2022-12-19) [some example scripts and notebooks](https://github.com/imhotep-project/studimhotep). BEWARE that it is not mean to be a clean and stand alone package at this stage! Just take it as example scripts.
+* CONTRIBUTE with your own scripts and notebooks!
