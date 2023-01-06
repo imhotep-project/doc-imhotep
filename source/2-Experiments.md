@@ -10,7 +10,7 @@ _If you need to copy or modify this table, the [.doc source is available here](h
 Experiment IMHOTEP.02 is the spinup of the WP1 experiments. It ran from 1968 to 2018, starting from climatological initial state.  All other WP1 experiments are initialized from a restart file from IMHOTEP.02 on 1980-01-01.
 
 ### Atmospheric forcing
-Those ocean simulations are forced by the JRA55 reanalysis used as atmospheric forcing in this configuration). The choice was made to use JRA55 as it is the reanalysis that is being widely used for the OMIP exercise, and also because it provided forcing data until present time (unlike other datasets such as DF5, the DRAKKAR forcing set). As any reanalysis, JRA55 has some known biases that should be kept in mind when interpreting the IMHOTEP ocean simulations. More on JRA55 [here](https://climatedataguide.ucar.edu/climate-data/jra-55).
+The IMHOTEP ocean simulations are _forced_ by the JRA55 atmoshperic reanalysis. JRA55 is the reanalysis that is being widely used for the OMIP exercise. It provides a forcing set from 1958 to present time (unlike other datasets such as DF5, the DRAKKAR forcing set, that are unavailable after 2015). As any reanalysis, JRA55 has some known biases that should be kept in mind when interpreting the IMHOTEP ocean simulations. More on JRA55 [here](https://climatedataguide.ucar.edu/climate-data/jra-55).
 
 ### Other technical details 
 An extensive technical doc and details about the NEMO configuration for each simulation have been provided by JM Molines and can be found [here](https://github.com/molines/IMHOTEP/tree/master/eORCA025).
@@ -25,7 +25,7 @@ Three ensembles of 10 members each have been produced over 1980-2018. Their name
 ![WP2 spinup and init](./img/WP2_spinup_init.png)
 
 ### Atmospheric forcing
-As for the WP1 experiments, the WP2 experiments  are forced by the JRA55 reanalysis used as atmospheric forcing in this configuration). The choice was made to use JRA55 as it is the reanalysis that is being widely used for the OMIP exercise, and also because it provided forcing data until present time (unlike other datasets such as DF5, the DRAKKAR forcing set). As any reanalysis, JRA55 has some known biases that should be kept in mind when interpreting the IMHOTEP ocean simulations. More on JRA55 [here](https://climatedataguide.ucar.edu/climate-data/jra-55).
+The IMHOTEP ocean simulations are _forced_ by the JRA55 atmoshperic reanalysis. JRA55 is the reanalysis that is being widely used for the OMIP exercise. It provides a forcing set from 1958 to present time (unlike other datasets such as DF5, the DRAKKAR forcing set, that are unavailable after 2015). As any reanalysis, JRA55 has some known biases that should be kept in mind when interpreting the IMHOTEP ocean simulations. More on JRA55 [here](https://climatedataguide.ucar.edu/climate-data/jra-55).
 
 ---
 ### Other technical details 
