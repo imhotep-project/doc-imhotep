@@ -15,6 +15,14 @@ The IMHOTEP ocean simulations are _forced_ by the JRA55 atmoshperic reanalysis. 
 ### Other technical details 
 An extensive technical doc and details about the NEMO configuration for each simulation have been provided by JM Molines and can be found [here](https://github.com/molines/IMHOTEP/tree/master/eORCA025).
 
+We list here some additional specificities about the IMHOTEP configuration:
+
+* __Global integral of freshwater fluxes reset to zero at each time step:__
+Option ‘nn_fwb=1’ switched on in the namelist.  In order to avoid that the freshxater (FW) forcing induces increase/decrease of the global SSH in the model, the global  integral of the FW fluxes is computed at each time step and  then “reset” to zero by retrieving  an equally-distributed corrective term over the globe.
+This is especially needed when using the ‘vvl’ option for SSH in the model because in that case, the model might otherwise develop  a long term trend of SSH (of several meters in long multi-year runs)  that might  in turn decrease the sea level below bathymetry in some coastal grid points (which would lead the model to crash). 
+In IMHOTEP, to avoid this problem, we have followed advice from UK Met Office and Pierre Mathiot (IGE) to switch on option  ‘nn_fwb=1’. The global integral of FW fluxes is thus reset to zero at each time step (note that it does not prevent regional trends to appear).
+Note however that only the _external_ FW forcing terms are taken into account in the global integral. The freshwater flux induced by the melting/freezing of sea ice (represented in the model) is not taken into account in the global integral reset. This might induced a weak seasonal cycle in the global mean SSH and even a trend if more melting than freezing occurs from year to year (which might be the case in recent years). If needed, this sea-ice induced trend in the global SSH might be removed a posteriori by removing the global integral from the SSH outputs.
+
 ---
 ## 2.2 Ensemble experiments (WP2))
 
