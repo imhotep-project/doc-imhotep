@@ -12,10 +12,11 @@ Experiment IMHOTEP.02 is the spinup of the WP1 experiments. It ran from 1968 to 
 ### Atmospheric forcing
 The IMHOTEP ocean simulations are _forced_ by the JRA55 atmoshperic reanalysis. JRA55 is the reanalysis that is being widely used for the OMIP exercise. It provides a forcing set from 1958 to present time (unlike other datasets such as DF5, the DRAKKAR forcing set, that are unavailable after 2015). As any reanalysis, JRA55 has some known biases that should be kept in mind when interpreting the IMHOTEP ocean simulations. More on JRA55 [here](https://climatedataguide.ucar.edu/climate-data/jra-55).
 
-### Other technical details 
-An extensive technical doc and details about the NEMO configuration for each simulation have been provided by JM Molines and can be found [here](https://github.com/molines/IMHOTEP/tree/master/eORCA025).
+### Other technical details (including NEMO namelists and files) 
 
-We list here some additional specificities about the IMHOTEP configuration:
+* __Namelists and documentation about preparing the simulations:__
+An extensive technical doc and details about the NEMO configuration for each simulation (including namelists and files) have been provided by JM Molines and can be found [here](https://github.com/molines/IMHOTEP/tree/master/eORCA025).
+Below we list here some additional specificities about the IMHOTEP configuration.
 
 * __Global integral of freshwater fluxes reset to zero at each time step:__
 Option ‘nn_fwb=1’ switched on in the namelist.  In order to avoid that the freshxater (FW) forcing induces increase/decrease of the global SSH in the model, the global  integral of the FW fluxes is computed at each time step and  then “reset” to zero by retrieving  an equally-distributed corrective term over the globe.
@@ -36,10 +37,11 @@ Three ensembles of 10 members each have been produced over 1980-2018. Their name
 The IMHOTEP ocean simulations are _forced_ by the JRA55 atmoshperic reanalysis. JRA55 is the reanalysis that is being widely used for the OMIP exercise. It provides a forcing set from 1958 to present time (unlike other datasets such as DF5, the DRAKKAR forcing set, that are unavailable after 2015). As any reanalysis, JRA55 has some known biases that should be kept in mind when interpreting the IMHOTEP ocean simulations. More on JRA55 [here](https://climatedataguide.ucar.edu/climate-data/jra-55).
 
 ---
-### Other technical details 
-An extensive technical doc and details about the NEMO configuration for each simulation have been provided by JM Molines and can be found [here](https://github.com/molines/IMHOTEP/tree/master/eORCA025/ENSEMBLE_SIMULATIONS).
+### Other technical details (including NEMO namelists and files) 
 
-We list here some additional specificities about the IMHOTEP configuration:
+* __Namelists and documentation about preparing the simulations:__
+An extensive technical doc and details about the NEMO configuration for each simulation (including namelists and files) have been provided by JM Molines and can be found [here](https://github.com/molines/IMHOTEP/tree/master/eORCA025).
+Below we list here some additional specificities about the IMHOTEP configuration.
 
 * __Global integral of freshwater fluxes reset to zero at each time step:__
 Option ‘nn_fwb=1’ switched on in the namelist.  In order to avoid that the freshxater (FW) forcing induces increase/decrease of the global SSH in the model, the global  integral of the FW fluxes is computed at each time step and  then “reset” to zero by retrieving  an equally-distributed corrective term over the globe.
