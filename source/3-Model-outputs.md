@@ -20,6 +20,11 @@ For WP2 ensemble experiments:
  You'll find the directories: `eORCA025.L75-IMHOTEP.<exp>.<mbr>-S/<freq>/<year>`where 
 `exp`: ES, EGAI, EAI ..., `mbr` : 001 à 010, `freq`: 1d 5d 1m 1y.
 
+Forcing files, grid files, etc are on jean-Marc's `$WORK` space:
+```
+/gpfswork/rech/cli/rcli002/eORCA025.L75/eORCA025.L75-I
+```
+
 * _Some more on the `$STORE/common` space:_
 
 Note that experiment SC (WP1) is located there:
