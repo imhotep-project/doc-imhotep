@@ -9,8 +9,8 @@ The dataset of the synthetic along-track model SSH is available for the altimetr
 
 ### What variable does the model provide?
 
-The model SSH from the NEMO-based IMHOTEP simulations is equivalent to the “ADT”
-variable on the scheme Fig. 6.1 below:
+The model SSH from the NEMO-based IMHOTEP simulations is equivalent to the quantity called “ADT”
+ in the usual altimetry terms (cf Fig. 6.1):
 
 * In the model, the ocean at rest would be following the geoid (the
 iso-gravity surface). And in the model, the gravity is taken constant
