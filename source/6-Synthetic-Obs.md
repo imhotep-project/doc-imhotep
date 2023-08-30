@@ -7,6 +7,8 @@
 
 The dataset of the synthetic along-track model SSH is available for the altimetry period 1993-2018 on Zenodo here: [DOI:xxxx](). It is provided there with a time-mean model SSH (gridded model field) over same period (1993-2018) that could be used as a proxy of "MDT" (cf Fig. 6.1).
 
+**Please, make reference to this DOI if you use the data [DOI:xxxx]().**
+
 ### What variable does the model provide?
 
 The model SSH from the NEMO-based IMHOTEP simulations is equivalent to the quantity called “ADT”
