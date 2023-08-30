@@ -4,7 +4,7 @@
 
 ### Summary
 ![nomenclature tab](./img/imhotep-nomenclature.png)
-_If you need to copy or modify this table, the [.doc source is available here](https://docs.google.com/document/d/1bAdjA8vK-TqqfxYqMXz69SUwyC0q7RlbeJqpd-5bzxo/edit?usp=sharing)_.
+_If you need to copy or modify this table, the [.doc source is available here](https://docs.google.com/document/d/1m3G377QQNhBQuKkzkrCyFdv_b2QWe3Ko6V40d_PO8gI/edit?usp=sharing)_.
 
 ### Spinup 
 Experiment IMHOTEP.02 is the spinup of the WP1 experiments. It ran from 1968 to 2018, starting from climatological initial state.  All other WP1 experiments are initialized from a restart file from IMHOTEP.02 on 1980-01-01.
