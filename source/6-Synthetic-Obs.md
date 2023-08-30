@@ -3,7 +3,7 @@
 ## 6.1 Synthetic along-track altimetry
 
 ### What is it? Where to get the data ?
-“Synthetic observations" of along-track SSH have  been extracted from the simulated gridded SSH fields from experiment IMHOTEP-GAIc at every single time and locations where a true SLA observation exists in the AVISO database for the along-track altimetry from the TOPEX, Jason-1, Jason-2 and Jason-3 satellite series.
+“Synthetic observations" of along-track SSH have  been extracted from the simulated gridded SSH field from experiment ** IMHOTEP-GAIc** at every single time and locations where a true SLA observation exists in the AVISO database for the along-track altimetry from the TOPEX, Jason-1, Jason-2 and Jason-3 satellite series over the period 1993-2018.
 
 The dataset of the synthetic along-track model SSH is available for the altimetry period 1993-2018 on Zenodo here: [DOI:xxxx](). It is provided there with a time-mean model SSH (gridded model field) over same period (1993-2018) that could be used as a proxy of "MDT" (cf Fig. 6.1).
 
