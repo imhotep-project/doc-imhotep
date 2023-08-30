@@ -2,8 +2,8 @@
 
 ## 6.1 Synthetic along-track altimetry
 
-* The model SSH from the NEMO-based IMHOTEP simulations is equivalent to the “ADT”
-variable on the scheme Fig. 6.1 below.
+The model SSH from the NEMO-based IMHOTEP simulations is equivalent to the “ADT”
+variable on the scheme Fig. 6.1 below:
 
 * In the model, the ocean at rest would be following the geoid (the
 iso-gravity surface). And in the model, the gravity is taken constant
@@ -18,3 +18,5 @@ within a constant.
 (set to constant). The atmospheric surface pressure is only taken into
 account by the model in the surface flux computation (bulk formulation)
 
+![SSH scheme](./img/SSHscheme.png)
+_Fig.6.1 Altimetry vocabulary_.
