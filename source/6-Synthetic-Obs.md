@@ -2,8 +2,10 @@
 
 ## 6.1 Synthetic along-track altimetry
 
-### What is it?
+### What is it? Where to get the data ?
 “Synthetic observations" of along-track SSH have  been extracted from the simulated gridded fields from experiment IMHOTEP-GAIc at every single time and locatios a true SLA observation exist in the AVISO database for the along-track altimetry from the TOPEX, Jason-1, Jason-2 and Jason-3 satellite series.
+
+The dataset of the along-track model SSH is available for the altimetry period 1993-2018 on Zenodo here: [DOI:xxxx](). It is provided along with a time-mean model SSH (gridded model field) over same period (1993-2018).
 
 ### What variable does the model provide?
 
@@ -34,7 +36,7 @@ _Fig.6.1 Altimetry vocabulary_.
 
 * In the IMHOTEP simulations we alternatively chose to control the global mean SSH on the fly in the model,  by correcting the the freshwater budget so that its global mean is reset to zero at every timestep.
 
-* __However__, in the computation of this correction,  only the terms E-P-R-(-SSS corrective term) are taken into account. The seasonal contribution of sea ice to the freshwater budget is not ( positive contribution when sea ice melts, negative when it freezes).  This means that the global mean SSH in the model is almost reset to almost zero every timesteps but not exactly zero. The delta is due to the sea ice melting/refreezing term.
+* __However__, in the computation of this correction,  only the terms E-P-R-(-SSS corrective term) are taken into account. The seasonal contribution of sea ice to the freshwater budget is not ( positive contribution when sea ice melts, negative when it freezes).  This means that the global mean SSH in the model is almost reset to almost zero every timesteps but not exactly zero. The delta is due to the sea ice melting/refreezing term. One might need to remove this delta in the global mean depending on the application targeted.
 
 ### In practice, how does the synthetic along-track data look like ?
 
