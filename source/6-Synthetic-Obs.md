@@ -189,7 +189,12 @@ variables:
 
 * 2019 Decharme, B., Delire, C., Minvielle, M., Colin, J., Vergnes, J.-P., Alias, A., et al. (2019). Recent changes in the ISBA-CTRIP land surface system for use in the CNRM-CM6 climate model and in global off-line hydrological applications. Journal of Advances in Modeling Earth Systems, 11, 1207– 1252. [https://doi.org/10.1029/2018MS001545](https://doi.org/10.1029/2018MS001545).
 
-* 2019 Mouginot J., Rignot E., Bjørk A., van den Broeke M. , Millan R., Morlighem M. , Noël B., Scheuchl B., and Wood M, Forty-six years of Greenland Ice Sheet mass balance from 1972 to 2018, Proceedings of the National Academy of Sciences May 2019, 116 (19) 9239-9244; DOI: [https://doi.org/10.1073/pnas.1904242116](https://doi.org/10.1073/pnas.1904242116 ). 
+* 2019 Mouginot J., Rignot E., Bjørk A., van den Broeke M. , Millan R., Morlighem M. , Noël B., Scheuchl B., and Wood M, Forty-six years of Greenland Ice Sheet mass balance from 1972 to 2018, Proceedings of the National Academy of Sciences May 2019, 116 (19) 9239-9244; DOI: [https://doi.org/10.1073/pnas.1904242116](https://doi.org/10.1073/pnas.1904242116 ).
 
 * 2015 KOBAYASHI S., OTA Y, HARADA Y, EBITA A., MORIYA M, ONODA H, ONOGI H, KAMAHORI H, KOBAYASHI C, ENDO H, MIYAOKA K, TAKAHASHI K (2015): The JRA-55 Reanalysis: General Specifications and Basic Characteristics, Journal of the Meteorological Society of Japan. Ser. II, 2015, Volume 93, Issue 1, Pages 5-48. [https://doi.org/10.2151/jmsj.2015-001](https://doi.org/10.2151/jmsj.2015-001).
 
+
+---
+## 6.2 Synthetic in-situ Temperature and Salinity observations (1980-2018)
+
+More to come soon.
