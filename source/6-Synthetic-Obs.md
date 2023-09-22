@@ -59,7 +59,7 @@ _Fig.6.1 Altimetry vocabulary._
 
 * Below is an example of a file header. The variables that you are interested in are mainly `SLA_SSH` which is the SSH as simulated by the NEMO model in the IMHOTEP simulations. You might also want to look at `SLA_OBS` which is the true observed SLA from AVISO along the same track at the same time. The model has interpolated its simulated SSH fields to get a model SSH value at every single observation of SLA given in the AVISO files.
 
-You'll find an example notebook to illustrate in practice how to open and plot those files [here](https://github.com/imhotep-project/imhotep-synthetic-obs/blob/main/tools/2023-07-19_check_SLA.ipynb).
+* You'll find an example notebook to illustrate in practice how to open and plot those files [here](https://github.com/imhotep-project/imhotep-synthetic-obs/blob/main/tools/2023-07-19_check_SLA.ipynb).
 
 ```
 ----------------------------------------------------------------------------------------
