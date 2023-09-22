@@ -40,8 +40,7 @@ within a constant.
 * Note also that the model is driven by a homogeneous and stationary atmospheric surface pressure (set to constant). The atmospheric surface pressure is only taken into
 account by the model in the surface flux computation (bulk formulation)
 
-
-![Altimetry vocabulary](./img/imhotep-nomenclature.png)
+![Altimetry vocabulary](./img/SSHscheme.png)
 _Fig.6.1 Altimetry vocabulary._
 
 ### Comments on the SSH global mean in the model
