@@ -41,6 +41,9 @@ within a constant.
 account by the model in the surface flux computation (bulk formulation)
 
 
+
+_Fig.6.1 Altimetry vocabulary._
+
 ### Comments on the SSH global mean in the model
 
 * In a Bussinesq model like NEMO, the global mean of SSH has no physical meaning: the global mean of SSH in the model can vary because of the freshwater forcing imbalance E-P-R +(SSS corrective term) - Sea ice.
