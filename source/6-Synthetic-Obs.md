@@ -1,50 +1,61 @@
 # 6. Synthetic observations
 
-## 6.1 Synthetic along-track altimetry
+## 6.1 Synthetic along-track altimetry 1993-2018
+ 
+---
+### Summary:
 
-### What is it? Where to get the data ?
-“Synthetic observations" of along-track SSH have  been extracted from the simulated gridded SSH field from experiment ** IMHOTEP-GAIc** at every single time and locations where a true SLA observation exists in the AVISO database for the along-track altimetry from the TOPEX, Jason-1, Jason-2 and Jason-3 satellite series over the period 1993-2018.
+* Distributed dataset version 1.0, September 2023
 
-The dataset of the synthetic along-track model SSH is available for the altimetry period 1993-2018 on Zenodo here: [DOI:xxxx](). It is provided there with a time-mean model SSH (gridded model field) over same period (1993-2018) that could be used as a proxy of "MDT" (cf Fig. 6.1).
+* Title: Synthetic along-track altimetry data over 1993-2018 from a NEMO-based simulation of the IMHOTEP project 
 
-**Please, make reference to this DOI if you use the data [DOI:xxxx]().**
+* Authors: Penduff T, Molines JM, Leroux S., Llovel William
+* Contact: [thierry.penduff@univ-grenoble-alpes.fr]()   or [stephanie.leroux@datlas.fr]()
 
-### What variable does the model provide?
+* Online documentation: [https://doc-imhotep.readthedocs.io/en/latest/6-Synthetic-Obs.html](https://doc-imhotep.readthedocs.io/en/latest/6-Synthetic-Obs.html)
 
-The model SSH from the NEMO-based IMHOTEP simulations is equivalent to the quantity called “ADT”
- in the usual altimetry terms (cf Fig. 6.1):
+* How to cite: DOI on Zenodo.
+Synthetic along-track altimetry data over 1993-2018 from a NEMO-based simulation of the IMHOTEP project, 
+
+---
+
+### What is it? Where to get the data from?
+
+"Synthetic observations" of along-track SSH have been extracted online during the  production of the  global, NEMO-based experiment ** IMHOTEP-GAIc**, at every single time and locations where a true SLA observation exists in the AVISO database for the along-track altimetry from the TOPEX, Jason-1, Jason-2 and Jason-3 satellite continuous series over the period 1993-2018. This global ocean/sea-ice/iceberg simulation uses the NEMO model, and has a horizontal resolution of 1/4°. The atmospheric forcing applied at the surface is based on the JRA reanalysis (Kobayashi et al., 2015) and varies over the full range of time-scales from 6 hours to multi-decadal. The freshwater runoff forcing applied to the experiment is fully-variable (monthly to multi-decadal)  based on the ISBA hydrographic reanalysis for rivers (Decharme et al., 2019) and from altimeter data and regional GCM simulations for the liquid and solid discharges from the Greenland ice-sheet (Mouginot et al 2019). These runoffs are only climatological around Antarctica.
+The synthetic along-track SSH dataset from the model is available over the altimetry period (1993-2018) on Zenodo. It is provided there along with a time-mean model SSH (gridded model field) over the same period that can be used as a proxy for mean dynamic topography ("MDT").
+
+### Which variable does the model provide?
+
+The model SSH from the NEMO-based IMHOTEP simulations is equivalent to the quantity called anomalous dynamic topograhy ("ADT") in the usual altimetry terms:
 
 * In the model, the ocean at rest would be following the geoid (the
-iso-gravity surface). And in the model, the gravity is taken constant
+iso-gravity surface). In the model, the gravity is taken constant
 (9.80665 m/s2) over the globe , which is itself considered a perfect sphere
-(Rt=6371229 m ).
+(Radius = 6371229 m).
 
-* In the model in practice it is the SSH gradient which is used in the
-computation of the horizontal surface pressure. And so SSH is known to
+* In the model in practice, only the SSH gradient is used in the
+computation of the horizontal surface pressure. SSH is thus known to
 within a constant.
 
-* Note also that the model does not see the atmospheric surface pressure
-(set to constant). The atmospheric surface pressure is only taken into
+* Note also that the model is driven by a homogeneous and stationary atmospheric surface pressure (set to constant). The atmospheric surface pressure is only taken into
 account by the model in the surface flux computation (bulk formulation)
 
-![SSH scheme](./img/SSHscheme.png)
-_Fig.6.1 Altimetry vocabulary_.
 
 ### Comments on the SSH global mean in the model
 
-* In a Bussinesq model like NEMO, the global mean of SSH has no physical meaning: the global mean of SSH in the model can vary because of the forcing terms E-P-R +(SSS corrective term) -Sea ice..
+* In a Bussinesq model like NEMO, the global mean of SSH has no physical meaning: the global mean of SSH in the model can vary because of the freshwater forcing imbalance E-P-R +(SSS corrective term) - Sea ice.
 
-* In previous simulations such as OCCIPUT, we had to remove the global mean SSH of the model at each time in the outputs before analysing the SLA.
+* In previous simulations such as OCCIPUT, we had to remove the global mean SSH of the model at each time in the outputs before analyzing the SLA.
 
-* In the IMHOTEP simulations we alternatively chose to control the global mean SSH on the fly in the model,  by correcting the the freshwater budget so that its global mean is reset to zero at every timestep.
+* In the IMHOTEP simulations we alternatively chose to control the global mean SSH on the fly in the model, by correcting the freshwater budget so that its global mean is reset to zero at every timestep.
 
-* __However__, in the computation of this correction,  only the terms E-P-R-(-SSS corrective term) are taken into account. The seasonal contribution of sea ice to the freshwater budget is not ( positive contribution when sea ice melts, negative when it freezes).  This means that the global mean SSH in the model is almost reset to almost zero every timesteps but not exactly zero. The delta is due to the sea ice melting/refreezing term. One might need to remove this delta in the global mean depending on the application targeted.
+* __However__, in the computation of this correction, only the terms E-P-R-(-SSS corrective term) are taken into account. The seasonal contribution of sea ice to the freshwater budget is not corrected (positive contribution when sea ice melts, negative when it freezes).  This means that the global mean SSH in the model is reset to almost zero every timestep but not exactly zero. The residual is due to the sea ice melting/refreezing term. One might need to remove this residual in the global mean depending on the application targeted.
 
-### In practice, how does the synthetic along-track data look like ?
+### In practice, how do the synthetic along-track data look like ?
 
 * The along-track files are in netcdf format as produced by the obs operator of the NEMO system model which is called the "feedbak" format (similar to the AVISO format).
 
-* Below is an example of header. The variables that you are interested in are mainly `SLA_SSH` which is the SSH as simulated by the NEMO model in the IMHOTEP simulations. You might also want to look at `SLA_OBS` which is the true observed SLA from AVISO. The model has interpolated its simulated SSH fields to get a model SSH value at every single observation of SLA given in the AVISO files.
+* Below is an example of a file header. The variables that you are interested in are mainly `SLA_SSH` which is the SSH as simulated by the NEMO model in the IMHOTEP simulations. You might also want to look at `SLA_OBS` which is the true observed SLA from AVISO along the same track at the same time. The model has interpolated its simulated SSH fields to get a model SSH value at every single observation of SLA given in the AVISO files.
 
 You'll find an example notebook to illustrate in practice how to open and plot those files [here](https://github.com/imhotep-project/imhotep-synthetic-obs/blob/main/tools/2023-07-19_check_SLA.ipynb).
 
@@ -174,3 +185,11 @@ variables:
     	:title = "NEMO observation operator output" ;
     	:Convention = "NEMO unified observation operator output" ;
 ```
+### References:
+
+* 2019 Decharme, B., Delire, C., Minvielle, M., Colin, J., Vergnes, J.-P., Alias, A., et al. (2019). Recent changes in the ISBA-CTRIP land surface system for use in the CNRM-CM6 climate model and in global off-line hydrological applications. Journal of Advances in Modeling Earth Systems, 11, 1207– 1252. [https://doi.org/10.1029/2018MS001545](https://doi.org/10.1029/2018MS001545).
+
+* 2019 Mouginot J., Rignot E., Bjørk A., van den Broeke M. , Millan R., Morlighem M. , Noël B., Scheuchl B., and Wood M, Forty-six years of Greenland Ice Sheet mass balance from 1972 to 2018, Proceedings of the National Academy of Sciences May 2019, 116 (19) 9239-9244; DOI: [https://doi.org/10.1073/pnas.1904242116](https://doi.org/10.1073/pnas.1904242116 ). 
+
+* 2015 KOBAYASHI S., OTA Y, HARADA Y, EBITA A., MORIYA M, ONODA H, ONOGI H, KAMAHORI H, KOBAYASHI C, ENDO H, MIYAOKA K, TAKAHASHI K (2015): The JRA-55 Reanalysis: General Specifications and Basic Characteristics, Journal of the Meteorological Society of Japan. Ser. II, 2015, Volume 93, Issue 1, Pages 5-48. [https://doi.org/10.2151/jmsj.2015-001](https://doi.org/10.2151/jmsj.2015-001).
+
