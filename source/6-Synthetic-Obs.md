@@ -5,8 +5,6 @@
 ---
 ### Summary:
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8379418.svg)](https://doi.org/10.5281/zenodo.8379418)
-
 * Distributed dataset version 1.1, September 2023
 
 * Title: Synthetic along-track altimetry data over 1993-2018 from a NEMO-based simulation of the IMHOTEP project 
@@ -17,6 +15,8 @@
 * Online documentation: [https://doc-imhotep.readthedocs.io/en/latest/6-Synthetic-Obs.html](https://doc-imhotep.readthedocs.io/en/latest/6-Synthetic-Obs.html)
 
 * How to cite:
+ [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8379418.svg)](https://doi.org/10.5281/zenodo.8379418)
+
 Penduff, Thierry, Molines, Jean-Marc, Leroux, Stephanie, & Llovel, William. (2023). _Synthetic along-track altimetry data over 1993-2018 from a NEMO-based simulation of the IMHOTEP project (1.1)_ [Data set]. Zenodo. [https://zenodo.org/record/8379418](https://zenodo.org/record/8379418)
 
 
