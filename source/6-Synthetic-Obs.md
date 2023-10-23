@@ -213,7 +213,9 @@ variables:
 * Contact: thierry.penduff@univ-grenoble-alpes.fr   or stephanie.leroux@datlas.fr
 
 * Online documentation: https://doc-imhotep.readthedocs.io/en/latest/6-Synthetic-Obs.html
-* How to cite: Penduff, Thierry, Molines, Jean-Marc, Leroux, Stephanie, & Llovel, William. (2023). _Synthetic in-situ T/S data over 1993-2018 from a NEMO-based simulation of the IMHOTEP project (1.0)_ [Data set]. Zenodo. [https://doi.org/](https://doi.org/)
+* How to cite: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10033077.svg)](https://doi.org/10.5281/zenodo.10033077)
+
+Penduff, Thierry, Molines, Jean-Marc, Leroux, Stephanie, & Llovel, William. (2023). _Synthetic in-situ T/S data over 1993-2018 from a NEMO-based simulation of the IMHOTEP project (1.1)_ [Data set]. Zenodo. [https://doi.org/](https://doi.org/)
 
 ---
 
