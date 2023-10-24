@@ -37,24 +37,20 @@ iso-gravity surface). In the model, the gravity is taken constant
 (Radius = 6371229 m).
 
 * In the model in practice, only the SSH gradient is used in the
-computation of the horizontal surface pressure. SSH is thus known to
+computation of the horizontal surface pressure. SSH is only known to
 within a constant.
 
-* Note also that the model is driven by a homogeneous and stationary atmospheric surface pressure (set to constant). The atmospheric surface pressure is only taken into
-account by the model in the surface flux computation (bulk formulation)
+* Note also that the model is driven by a homogeneous and stationary atmospheric surface pressure (set to constant). The atmospheric surface pressure from the atmospheric reanalysis is only taken into
+account by the model in the surface flux computation (bulk formulation).
 
 ![Altimetry vocabulary](./img/SSHscheme.png)
 _Fig.6.1 Altimetry vocabulary._
 
 ### Comments on the SSH global mean in the model
 
-* In a Bussinesq model like NEMO, the global mean of SSH has no physical meaning: the global mean of SSH in the model can vary because of the freshwater forcing imbalance E-P-R +(SSS corrective term) - Sea ice.
+* In a Bussinesq model like NEMO, the global mean of SSH has no physical meaning: the global mean of SSH in the model can vary because of the **freshwater forcing imbalance E-P-R +(SSS corrective term) - Sea ice.** This imbalance of the freshwater fluxes is due to the fact that the different forcing  terms are not necessarily consistent with each other: **P** from JRA reanalysis, **E** derived from JRA surface temperature and humidity and from the ocean model surface state of which the mesoscale features are not necessarily consistent with what the reanalysis atmosphere "saw", **R** derived from ISBA-CTRIP reanalysis).
 
-* In previous simulations such as OCCIPUT, we had to remove the global mean SSH of the model at each time in the outputs before analyzing the SLA.
-
-* In the IMHOTEP simulations we alternatively chose to control the global mean SSH on the fly in the model, by correcting the freshwater budget so that its global mean is reset to zero at every timestep.
-
-* __However__, in the computation of this correction, only the terms E-P-R-(-SSS corrective term) are taken into account. The seasonal contribution of sea ice to the freshwater budget is not corrected (positive contribution when sea ice melts, negative when it freezes).  This means that the global mean SSH in the model is reset to almost zero every timestep but not exactly zero. The residual is due to the sea ice melting/refreezing term. One might need to remove this residual in the global mean depending on the application targeted.
+* In the IMHOTEP simulations we chose to control the global mean SSH on the fly in the model, by resetting the global mean freshwater budget to zero at every timestep (option `nn_fwb = 1` in the NEMO model namelist). However, it is important to note that in the computation of this correction, only the flux terms E-P-R-(-SSS corrective term) are taken into account. The seasonal contribution of sea ice to the freshwater budget is kept free in the budget (positive contribution when sea ice melts, negative when it freezes).  This means that the global mean SSH in the model is reset to almost zero every timestep but not exactly zero. The residual is due to the sea ice melting/refreezing term. _One might need to remove this residual in the global mean depending on the application targeted._
 
 ### In practice, how do the synthetic along-track data look like ?
 
