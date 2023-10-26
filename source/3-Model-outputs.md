@@ -4,6 +4,7 @@
 ## 3.1 How to get access ?
 * The project is on-going and the IMHOTEP simulations are prepared and produced on Jean-Zay@IDRIS (french national HPC). The outputs are stored on Jean-Zay and reprensent ~200 To for WP1 (the global sensitivity runs).
 * To get access to the data, contact first Thierry Penduff (IGE), William Llovel (LOPS), Jean-Marc Molines (IGE), Stephanie Leroux (Datlas).
+* Some datasets from IMHOTEP have been shared in the context of the ESA-CCI-SLBC+ project. Please refers to the documents on the project google drive for more information specific to this project.
 
 ---
 ## 3.2 Where to find the primary outputs on Jean Zay?
